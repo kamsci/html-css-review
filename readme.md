@@ -86,18 +86,18 @@ Explain here
 div {
   border-radius: 50%;
 }
-/* alters the boarder around an object, if the object is square, 50% will make it a circle. */
+/* alters the boarder around all divs in the page, if the object is square, 50% will make it a circle. */
 
 .header p {
   font-size: 18px;
 }
-/* changes font size of the paragraph in the header class only */
+/* changes font size of paragraph elements with the class header, or within a parent with the class header only */
 
 .footer {
   position: absolute;
   bottom: 0;
 }
-/* positions your footer absolutely to the parent element that should have position relative. This ignores the standard layout and allows you to place certain content above or below other content */
+/* positions your footer class absolutely to the parent element that should have position relative. This ignores the standard layout and allows you to place certain content above or below other content */
 
 .splash-image {
   background-image: url("../images/ocean.jpg");
@@ -112,4 +112,3 @@ div {
 }
 /* adds the hover css  style to the ninja class so when you hover over the container, the color turns black when hovering and the dispaly is none*/
 ```
-
