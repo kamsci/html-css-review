@@ -19,6 +19,18 @@ This is a review of your working knowledge of HTML and CSS. Note that this revie
 
 ```html
 <!-- Code goes here -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="">
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1></h1>
+    <script type="text/javascript"></script>
+  </body>
+</html>
 ```
 
 2.) What are the differences between these tags?
@@ -34,7 +46,8 @@ This is a review of your working knowledge of HTML and CSS. Note that this revie
 ```
 Explain here.
 ```
-
+  img is a void element, you typically don't next inside of it. It will put the image to the div or location you are in. 
+  div will always have an opening and closing tag. div does not add content, but creates containers for content to be placed into.. divisios.
 ---
 
 ## CSS
@@ -58,6 +71,11 @@ Explain here.
 
 ```
 Explain here
+  Inline CSS is quick and dirty css styling directing in your html code. it is not recomended, it can get complex and you might want to use a different style sheet in the future, like boostrap etc. All html code will trump anything you have in a css stylesheet. 
+
+  Internal stylesheet is separated from the html code, however, it is in the same file as your html. also not recommended
+
+  Exteral style sheet is it's own .css file that is referenced in the html file. Recommended way to ass style guides. you can add more than 1 style guide to reference. 
 ```
 
 2.) Below are some different CSS selectors. Use CSS comments to describe what each selector will do.
@@ -67,15 +85,18 @@ Explain here
 div {
   border-radius: 50%;
 }
+/* alters the boarder around an object, if the object is square, 50% will make it a circle. */
 
 .header p {
   font-size: 18px;
 }
+/* changes font size of the paragraph in the header class only */
 
 .footer {
   position: absolute;
   bottom: 0;
 }
+/* positions your footer absolutely to the parent element that should have position relative. This ignores the standard layout and allows you to place certain content above or below other content */
 
 .splash-image {
   background-image: url("../images/ocean.jpg");
@@ -83,9 +104,13 @@ div {
   width: 100%;
 }
 
+/* adds a picture as a background to the class 'splash-image'. the picture will cover the background once instead of repeating, and it's widthe is 100% of the container*/
+
 .ninja:hover {
   display: none;
   color: black;
 }
+
+/* adds the hover css  style to the ninja class so when you hover over the container, the color turns black when hovering and the dispaly is none*/
 ```
 
